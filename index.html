@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Random Password Generator</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+</head>
+<body>
+	<div class="container">
+        <h1><span id="hello-text"></span></h1>
+		<!-- <h1>Random Password Generator</h1> -->
+        <h3><span id="hello-text"></span></h3>
+		<form>
+			<label for="length">Password Length:</label>
+			<input type="number" id="length" name="length" min="1" max="100" required>
+			<button type="submit">Generate Password</button>
+		</form>
+		<div id="password-container"></div>
+		<button id="copy-btn" class="hidden">Copy to Clipboard</button>
+		<div id="copy-message" class="hidden"></div>
+		<div id="error-message" class="hidden"></div>
+
+        <footer>
+            Made with &#x2764;&#xFE0F; by Apurv
+        </footer>
+	</div>
+
+	<script src="logic.js"></script>
+</body>
+</html>
